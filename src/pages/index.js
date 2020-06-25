@@ -15,7 +15,7 @@ function IndexPage(props) {
         size="lg"
         bgImage=""
         bgImageOpacity={1}
-        title="The Marketplace built for Uncertain Times"
+        title="The Murketplace built for Uncertain Times"
         subtitle="Our purpose is to enable you to optimally help your community. Request resources and offer what you can to help navigate the tough times."
         buttonText="Sign in"
         buttonColor="light"
