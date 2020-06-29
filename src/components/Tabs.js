@@ -1,5 +1,6 @@
 import React from 'react';
 import Table from "./../components/Table";
+import Cognos from "./../components/Cognos";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -87,7 +88,7 @@ export default function NavTabs() {
         
           <LinkTab label="Overview" href="/drafts" {...a11yProps(0)} />
           <LinkTab label="Visual" href="/trash" {...a11yProps(1)} />
-          <LinkTab label="Watson" href="/spam" {...a11yProps(2)} />
+          {/* <LinkTab label="Watson" href="/spam" {...a11yProps(2)} /> */}
         
         </Tabs>
         </span>
@@ -95,13 +96,15 @@ export default function NavTabs() {
       <TabPanel color = 'white' value={value} index={0}>
         <CardSection />
         <Table />
+
+
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Visual
+        <Cognos />
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      {/* <TabPanel value={value} index={2}>
         Watson
-      </TabPanel>
+      </TabPanel> */}
     </div>
   );
 }

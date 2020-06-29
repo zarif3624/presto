@@ -19,6 +19,9 @@ function DashboardPage(props) {
   return (
     <div>
       <Tabs />
+
+    
+
     {/* <DashboardPlaceholder
       bg="white"
       textColor="dark"
