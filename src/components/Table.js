@@ -42,31 +42,31 @@ const tableIcons = {
 export default function MaterialTableDemo() {
   const [state, setState] = React.useState({
     columns: [
-      { title: 'Name', field: 'name',
+      { title: 'Hospital', field: 'name',
       cellStyle: {
-        backgroundColor: '#039be5',
-        color: '#FFF'
+        backgroundColor: '#FFF',
+        color: '#000'
       },
       headerStyle: {
-        backgroundColor: '#039be5',
+        backgroundColor: '#FFF',
       }
      },
-      { title: 'Surname', field: 'surname' },
-      { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
-      {
-        title: 'Birth Place',
-        field: 'birthCity',
-        lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
-      },
+      { title: 'Doctors', field: 'doctors', type: 'numeric' },
+      { title: 'Nurses', field: 'nurses', type: 'numeric' },
+      { title: 'Gloves', field: 'gloves', type: 'numeric' },
+      { title: 'Masks', field: 'masks', type: 'numeric' },
+      { title: 'Ventilators', field: 'vent', type: 'numeric' },
+
     ],
     data: [
-      { name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 },
-      {
-        name: 'Zerya Betül',
-        surname: 'Baran',
-        birthYear: 2017,
-        birthCity: 34,
-      },
+      { name: 'Bellevue Hospital Center', doctors: 1564, nurses: 1132, gloves: 70000, masks: 55000, vent: 376 },
+      { name: 'Lenox Hill Hospital', doctors: 685, nurses: 580, gloves: 80000, masks: 73000, vent: 231 },
+      { name: 'Sloan Kettering Cancer Center', doctors: 1312, nurses: 1092, gloves: 53000, masks: 49130, vent: 435 },
+      { name: 'NYU Langone Hospital', doctors: 986, nurses: 578, gloves: 12000, masks: 120000, vent: 378 },
+      { name: 'Mount Sinai Hospital', doctors: 1932, nurses: 786, gloves: 9800, masks: 14000, vent: 111 },
+      { name: 'NewYork-Presbyterian', doctors: 1123, nurses: 800, gloves: 40000, masks: 35000, vent: 124 },
+      { name: 'Rockefeller Institute', doctors: 754, nurses: 543, gloves: 30000, masks: 45000, vent: 230 },
+      { name: 'Harlem Hospital Center', doctors: 542, nurses: 403, gloves: 19000, masks: 23000, vent: 129 },
     ],
   });
 
